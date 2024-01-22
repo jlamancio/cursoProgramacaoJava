@@ -1,4 +1,4 @@
-package cursoProgramacaoA104_116;
+package cursoProgramacaoA104_A116;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

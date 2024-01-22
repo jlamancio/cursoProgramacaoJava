@@ -1,4 +1,4 @@
-package cursoProgramacaoA104_116;
+package cursoProgramacaoA104_A116;
 
 import java.time.Instant;
 import java.time.LocalDate;
