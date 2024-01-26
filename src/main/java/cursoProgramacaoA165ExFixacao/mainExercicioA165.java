@@ -1,8 +1,8 @@
-package cursoProgramacaoExFixacaoA165;
+package cursoProgramacaoA165ExFixacao;
 
-import cursoProgramacaoExFixacaoA165.entities.Contribuinte;
-import cursoProgramacaoExFixacaoA165.entities.PessoaFisica;
-import cursoProgramacaoExFixacaoA165.entities.PessoaJuridica;
+import cursoProgramacaoA165ExFixacao.entities.Contribuinte;
+import cursoProgramacaoA165ExFixacao.entities.PessoaFisica;
+import cursoProgramacaoA165ExFixacao.entities.PessoaJuridica;
 
 import java.util.ArrayList;
 import java.util.List;

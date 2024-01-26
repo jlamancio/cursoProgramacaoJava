@@ -1,4 +1,4 @@
-package cursoProgramacaoExFixacaoA165.entities;
+package cursoProgramacaoA165ExFixacao.entities;
 
 public class PessoaJuridica extends Contribuinte {
     private Integer numeroDeFuncionarios;

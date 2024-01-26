@@ -1,6 +1,4 @@
-package cursoProgramacaoExFixacaoA165.entities;
-
-import cursoProgramacaoExFixacaoA165.entities.Contribuinte;
+package cursoProgramacaoA165ExFixacao.entities;
 
 public class PessoaFisica extends Contribuinte {
     private Double gastosComSaude;

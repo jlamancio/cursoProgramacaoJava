@@ -1,4 +1,4 @@
-package cursoProgramacaoExFixacaoA165.entities;
+package cursoProgramacaoA165ExFixacao.entities;
 
 public abstract class Contribuinte {
     private String nome;
