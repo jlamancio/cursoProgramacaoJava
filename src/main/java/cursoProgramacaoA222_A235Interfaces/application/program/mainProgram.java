@@ -23,19 +23,19 @@ public class mainProgram {
         String modeloDoCarro = sc.nextLine();
         System.out.print("Retirada do veículo (dd/mm/yyyy hh:mm): ");
         LocalDateTime start = LocalDateTime.parse(sc.nextLine(), fmt);
-        System.out.print("Retorno do veículo (dd/mm/yyyy hh:mm): ");
+        System.out.print("Retorno do veículo (dd/mm/yyyy hh:mm):  ");
         LocalDateTime finish = LocalDateTime.parse(sc.nextLine(), fmt);
 
         CarRental cr = new CarRental(start, finish, new Vehicle(modeloDoCarro));
 
-        System.out.println("Entre com o preço por hora:  ");
+        System.out.print("Entre com o preço por hora:  ");
         double pricePerHour = sc.nextDouble();
-        System.out.println("Entre com o preço por dia: ");
+        System.out.print("Entre com o preço por dia: ");
         double pricePerDay = sc.nextDouble();
 
         RentalService rentalService = new RentalService(pricePerHour, pricePerDay, new BrazilTaxService());
         rentalService.processInvoice(cr);
-
+        System.out.println();
         System.out.println(" ***  F A T U R A  *** ");
         System.out.println();
         System.out.println("Pagamento basico: " + String.format("%.2f", cr.getInvoice().getBasicPayment()));
