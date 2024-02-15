@@ -2,7 +2,7 @@ package cursoProgramacaoA222_A235Interfaces.model.entities;
 
 import cursoProgramacaoA222_A235Interfaces.model.enums.Color;
 
-public class Rectangle extends Shape {
+public class Rectangle extends AbstractShape {
     private Double width, height;
     public Rectangle (Color color, Double width, Double height){
         super(color);
