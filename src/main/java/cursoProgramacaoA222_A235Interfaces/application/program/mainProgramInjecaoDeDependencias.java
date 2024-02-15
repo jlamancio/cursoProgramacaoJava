@@ -3,6 +3,7 @@ package cursoProgramacaoA222_A235Interfaces.application.program;
 import cursoProgramacaoA222_A235Interfaces.model.entities.Contract;
 import cursoProgramacaoA222_A235Interfaces.model.entities.Installment;
 import cursoProgramacaoA222_A235Interfaces.model.services.ContractService;
+import cursoProgramacaoA222_A235Interfaces.model.services.PaypalService;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -28,7 +29,7 @@ public class mainProgramInjecaoDeDependencias {
         System.out.print("Entre com o número de parcelas: ");
         int n = sc.nextInt();
 
-        ContractService contractService = new ContractService(null);
+        ContractService contractService = new ContractService( new PaypalService());
         contractService.processContract(obj, n);
 
         System.out.println(" *** P A R C E L A S *** ");
