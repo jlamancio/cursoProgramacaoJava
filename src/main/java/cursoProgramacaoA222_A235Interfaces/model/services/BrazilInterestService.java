@@ -12,8 +12,7 @@ public class BrazilInterestService implements InterestService {
     public double getInterestRate() {
         return interestRate;
     }
-<<<<<<< HEAD
-=======
+
     @Override
     public double payment(double amount, int months){
         if (months < 1){
@@ -21,5 +20,5 @@ public class BrazilInterestService implements InterestService {
         }
         return amount * Math.pow(1.0 + interestRate / 100.00, months);
     }
->>>>>>> 75bcf63d32834bd26fc63547030cf3eda2383aff
+
 }

@@ -23,10 +23,7 @@ public class mainDefaultMethods {
         System.out.println();
         System.out.print("Payment after " + months + " months : ");
         System.out.println(String.format("%.2f", payment));
-<<<<<<< HEAD
 
-=======
->>>>>>> 75bcf63d32834bd26fc63547030cf3eda2383aff
         InterestService is1 = new USAInterestService(1.0);
         double payment1 = is1.payment(amount, months);
         System.out.print("Payment after " + months + " months : ");
