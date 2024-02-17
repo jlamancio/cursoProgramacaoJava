@@ -3,12 +3,12 @@ package cursoProgramacaoA236_A249GenericsSetMap.services;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrintService {
-    private List<Object> list = new ArrayList<>();
-    public void addValue(Object value){
+public class PrintService<T> {
+    private List<T> list = new ArrayList<>();
+    public void addValue(T value){
         list.add(value);
     }
-    public Object first(){
+    public T first(){
         if (list.isEmpty()){
             throw new IllegalStateException("Error: List is empty");
         }
