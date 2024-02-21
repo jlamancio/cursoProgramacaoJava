@@ -1,7 +1,7 @@
-package consumer.application;
+package pFuncional_Consumer.application;
 
 
-import consumer.entities.Product;
+import pFuncional_Consumer.entities.Product;
 
 import java.util.ArrayList;
 import java.util.List;

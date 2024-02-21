@@ -1,6 +1,6 @@
-package Predicate.util;
+package pFuncional_Predicate.util;
 
-import Predicate.entities.Product;
+import pFuncional_Predicate.entities.Product;
 
 import java.util.function.Predicate;
 

@@ -1,4 +1,4 @@
-package progFuncionalLambda_2;
+package pFuncionalLambda_2;
 
 import java.util.Arrays;
 

@@ -1,11 +1,10 @@
-package Predicate.application;
+package pFuncional_Predicate.application;
 
 
-import Predicate.entities.Product;
+import pFuncional_Predicate.entities.Product;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
 public class mainProgramPredicate_1 {
     /*

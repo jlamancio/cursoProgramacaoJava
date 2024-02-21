@@ -1,4 +1,4 @@
-package progFuncionalLambda_1.entities;
+package pFuncionalLambda_1.entities;
 
 public class Product implements Comparable<Product> {
     private String name;

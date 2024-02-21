@@ -1,6 +1,6 @@
-package consumer.util;
+package pFuncional_Consumer.util;
 
-import consumer.entities.Product;
+import pFuncional_Consumer.entities.Product;
 
 import java.util.function.Consumer;
 

@@ -1,6 +1,6 @@
-package consumer.entities;
+package pFuncional_Function.entities;
 
-public class Product{
+public class Product {
     private String name;
     private Double price;
 
@@ -8,31 +8,36 @@ public class Product{
         this.name = name;
         this.price = price;
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public Double getPrice() {
         return price;
     }
+
     public void setPrice(Double price) {
         this.price = price;
     }
 
-    public static void staticPriceUpdate(Product p){
-        p.setPrice(p.getPrice() * 1.1);
+    public static String staticUpperCaseName(Product p) {
+        return p.getName().toUpperCase();
     }
 
-    public void nonStaticPriceUpdate(){
-        setPrice(getPrice() * 1.1);
+    public String nonStaticUpperCaseName() {
+        return name.toUpperCase();
     }
+
 
     @Override
-    public String toString(){
+    public String toString() {
 
-        return "Product [name= " + name + ", price= " + String.format("%.2f",price) + "]";
+        return "Product [name= " + name + ", price= " + String.format("%.2f", price) + "]";
     }
 
 }

@@ -1,6 +1,6 @@
-package progFuncionalLambda_2;
+package pFuncionalLambda_2;
 
-import progFuncionalLambda_1.entities.Product;
+import pFuncionalLambda_1.entities.Product;
 
 import java.util.ArrayList;
 import java.util.List;
