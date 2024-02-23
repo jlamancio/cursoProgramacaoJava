@@ -28,7 +28,4 @@ public class mainProgramFunction_1 {
         names.forEach(System.out::println);
 
     }
-
-
-
 }

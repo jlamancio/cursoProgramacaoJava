@@ -3,7 +3,6 @@ package pFuncionalLambda_2;
 import java.util.Arrays;
 
 public class mainProgram_1 {
-
     /*
         Neste exercício estamos tratando do conceito de: TRANSPARENCIA REFERENCIAL; caso em que a
         função não depende de dados externos , como por exemplo:
