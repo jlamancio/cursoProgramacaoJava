@@ -1,6 +1,7 @@
 package jdbc.DevSuperior_jdbc2.application;
 
 import jdbc.DevSuperior_jdbc2.db.DB;
+import jdbc.DevSuperior_jdbc2.db.DBIntegrityException;
 import jdbc.DevSuperior_jdbc2.db.DbException;
 
 import java.sql.Connection;
@@ -8,7 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 
-public class mainJdbcCRUD_U {
+public class mainJdbcCRUD_D {
     public static void main(String[] args) {
 
         Connection conn = DB.getConnection();
@@ -16,19 +17,17 @@ public class mainJdbcCRUD_U {
 
         try {
             st = conn.prepareStatement(
-                    "UPDATE coursejdbc.seller "
-                            + "SET BaseSalary = BaseSalary + ? "
+                    "DELETE FROM coursejdbc.department "
                             + "WHERE "
-                            + "(DepartmentId = ?)");
+                            + "(Id = ?)");
 
-            st.setDouble(1, 200.00);
-            st.setInt(2, 4);
+            st.setInt(1, 2);
 
             int rowsAffected = st.executeUpdate();
 
             System.out.println("Done ! Rows Affected = " + rowsAffected);
         } catch (SQLException e) {
-            throw new DbException(e.getMessage());
+            throw new DBIntegrityException(e.getMessage());
 
         } finally {
             DB.closeStatement(st);
